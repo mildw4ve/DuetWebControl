@@ -14,7 +14,7 @@
 					<v-col cols="12">
 						<job-control-panel></job-control-panel>
 					</v-col>
-					<v-col>
+					<v-col cols="12">
 					<macro-list></macro-list>
 					</v-col>
 				</v-row>
@@ -33,6 +33,9 @@
 					</v-col>
 					<v-col cols="12">
 						<movement-panel></movement-panel>
+					</v-col>
+					<v-col cols="12">
+						<webcam-panel></webcam-panel>
 					</v-col>
 				</v-row>
 			</v-col>

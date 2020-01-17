@@ -7,13 +7,13 @@ iframe {
 }
 
 img {
-	max-width: 100%;
-	max-height: 100%;
+	width: 100%;
+	height: auto;
 }
-
 .img-container {
 	overflow: hidden;
 }
+
 
 .flip-x {
 	-moz-transform: scaleX(-1);

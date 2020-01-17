@@ -40,13 +40,14 @@ export const Routing = [
 				component: Control.Console
 			},
 			// Webcam
+			/* not using it
 			{
 				icon: 'mdi-photo-camera',
 				caption: 'menu.job.webcam',
 				path: '/Job/Webcam',
 				component: Job.Webcam,
 				condition: 'webcam'
-			},
+			},*/
 			// Height Map
 			{
 				icon: 'mdi-grid',
