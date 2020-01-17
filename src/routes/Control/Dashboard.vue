@@ -37,6 +37,9 @@
 					<v-col cols="12">
 						<babystepping-panel></babystepping-panel>
 					</v-col>
+					<v-col cols="12">
+						<webcam-panel></webcam-panel>
+					</v-col>
 				</v-row>
 			</v-col>
 	</v-row>
