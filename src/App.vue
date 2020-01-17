@@ -246,7 +246,7 @@ export default {
 		isPrinting(to) {
 			if (to) {
 				// Go to Job Status when a print starts
-				this.$router.push('/Job/Status');
+				this.$router.push('/');
 			} else {
 				Piecon.reset();
 			}
