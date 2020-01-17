@@ -18,11 +18,18 @@ export const Routing = [
 		icon: 'mdi-tune',
 		caption: 'menu.control.caption',
 		pages: [
+			// Status
+			{
+				icon: 'mdi-information',
+				caption: 'menu.job.status',
+				path: '/',
+				component: Job.Status
+			},
 			// Dashboard
 			{
 				icon: 'mdi-view-dashboard',
 				caption: 'menu.control.dashboard',
-				path: '/',
+				path: '/Dashboard',
 				component: Control.Dashboard
 			},
 			// Console
@@ -32,27 +39,6 @@ export const Routing = [
 				path: '/Console',
 				component: Control.Console
 			},
-			// Height Map
-			{
-				icon: 'mdi-grid',
-				caption: 'menu.control.heightmap',
-				path: '/Heightmap',
-				component: Control.Heightmap
-			}
-		]
-	},
-	// Job
-	{
-		icon: 'mdi-printer',
-		caption: 'menu.job.caption',
-		pages: [
-			// Status
-			{
-				icon: 'mdi-information',
-				caption: 'menu.job.status',
-				path: '/Job/Status',
-				component: Job.Status
-			},
 			// Webcam
 			{
 				icon: 'mdi-photo-camera',
@@ -60,14 +46,14 @@ export const Routing = [
 				path: '/Job/Webcam',
 				component: Job.Webcam,
 				condition: 'webcam'
+			},
+			// Height Map
+			{
+				icon: 'mdi-grid',
+				caption: 'menu.control.heightmap',
+				path: '/Heightmap',
+				component: Control.Heightmap
 			}
-			// Visualiser (coming soon)
-			/* {
-				icon: 'mdi-theater',
-				caption: 'menu.job.visualiser',
-				path: '/Job/Visualiser',
-				component: Job.Visualiser
-			} */
 		]
 	},
 	// Files
@@ -90,12 +76,14 @@ export const Routing = [
 				component: Files.Macros
 			},
 			// Filaments
+			/* not using it
 			{
 				icon: 'mdi-radiobox-marked',
 				caption: 'menu.files.filaments',
 				path: '/Files/Filaments',
 				component: Files.Filaments
 			},
+			*/ 
 			// Display
 			{
 				icon: 'mdi-format-list-numbered',
